@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+    <div class="containor">
+      <input type="text" id="result" />
+      <div>
+        <button class="button" id="upper" onClick="handleAllClear()">AC</button>
+        <button class="button" id="upper">+/-</button>
+        <button class="button" id="upper">%</button>
+        <button class="button" id="equal">÷</button>
+      </div>
+      <div class="bzero">
+        <button class="button" id="dot">7</button>
+        <button class="button" id="dot">8</button>
+        <button class="button" id="dot">9</button>
+        <button class="button" id="equal" onclick="handleMultiply()">×</button>
+      </div>
+      <div class="bzero">
+        <button class="button" id="dot" onClick="dis('4')">4</button>
+        <button class="button" id="dot" onClick="dis('5')">5</button>
+        <button class="button" id="dot" onClick="dis('6')">6</button>
+        <button class="button" id="equal" onClick="dis('-')">-</button>
+      </div>
+      <div class="bzero">
+        <button class="button" id="dot">1</button>
+        <button class="button" id="dot">2</button>
+        <button class="button" id="dot">3</button>
+        <button class="button" id="equal">+</button>
+      </div>
+      <div class="bzero">
+        <button class="button" id="zero">0</button>
+        <button class="button" id="dot">.</button>
+        <button class="button" id="equal" onClick="solve()">=</button>
+      </div>
+    </div>
+    <script src="calculator.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+      integrity="sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
+      integrity="sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
